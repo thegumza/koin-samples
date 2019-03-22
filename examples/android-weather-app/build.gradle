@@ -8,10 +8,9 @@ apply from: '../../gradle/versions-examples.gradle'
 android {
     compileSdkVersion android_target_version
     buildToolsVersion android_build_tools_version
-
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion android_target_version
+        targetSdkVersion 28
         applicationId "koin.sampleapp.mvvm"
         versionCode 1
         versionName "1.0"
@@ -46,6 +45,7 @@ android {
 }
 
 dependencies {
+
     // Android Support
     implementation "com.android.support:appcompat-v7:$support_lib_version"
     implementation "com.android.support:support-v4:$support_lib_version"
@@ -59,8 +59,10 @@ dependencies {
 
     // Kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
     // Anko
     implementation "org.jetbrains.anko:anko-commons:$anko_version"
+
     // Koin
     implementation "org.koin:koin-android-viewmodel:$koin_version"
     testImplementation "org.koin:koin-test:$koin_version"
@@ -82,7 +84,7 @@ dependencies {
     implementation 'com.joanzapata.iconify:android-iconify-weathericons:2.2.2'
 
     // Gson
-    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.google.code.gson:gson:2.8.5'
 
     // Networking
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
@@ -93,7 +95,7 @@ dependencies {
 
     // Rx
     implementation "io.reactivex.rxjava2:rxjava:$rxjava_version"
-    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
 
     // Canary
     debugImplementation "com.squareup.leakcanary:leakcanary-android:$leak_canary_version"

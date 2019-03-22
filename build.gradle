@@ -21,7 +21,6 @@ buildscript {
         classpath "digital.wup:android-maven-publish:$android_maven_publish"
     }
 }
-
 allprojects {
 
     repositories {
@@ -49,4 +48,6 @@ allprojects {
         classifier = 'javadoc'
         from dokka
     }
+}
+dependencies {
 }
