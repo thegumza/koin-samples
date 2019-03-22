@@ -1,10 +1,10 @@
 package fr.ekito.myweatherapp.view.weather
 
 import android.app.AlertDialog
-import android.arch.lifecycle.Observer
+import androidx.lifecycle.Observer
 import android.os.Bundle
-import android.support.design.widget.Snackbar
-import android.support.v4.app.Fragment
+import com.google.android.material.snackbar.Snackbar
+import androidx.fragment.app.Fragment
 import android.text.InputType
 import android.view.LayoutInflater
 import android.view.View
@@ -19,7 +19,7 @@ import kotlinx.android.synthetic.main.fragment_result_header.*
 import org.jetbrains.anko.startActivity
 import org.koin.android.viewmodel.ext.android.sharedViewModel
 
-class WeatherHeaderFragment : Fragment() {
+class WeatherHeaderFragment : androidx.fragment.app.Fragment() {
 
     private val viewModel: WeatherViewModel by sharedViewModel()
 

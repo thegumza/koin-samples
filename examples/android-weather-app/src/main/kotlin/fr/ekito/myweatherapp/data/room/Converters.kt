@@ -1,6 +1,6 @@
 package fr.ekito.myweatherapp.data.room
 
-import android.arch.persistence.room.TypeConverter
+import androidx.room.TypeConverter
 import java.util.*
 
 class Converters {

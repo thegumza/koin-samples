@@ -1,7 +1,7 @@
 package fr.ekito.myweatherapp.view.weather.list
 
 import android.content.Context
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,7 +15,7 @@ class WeatherListAdapter(
     val context: Context,
     var list: List<WeatherItem>,
     private val onDetailSelected: (WeatherItem) -> Unit
-) : RecyclerView.Adapter<WeatherListAdapter.WeatherResultHolder>() {
+) : androidx.recyclerview.widget.RecyclerView.Adapter<WeatherListAdapter.WeatherResultHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): WeatherResultHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_weather, parent, false)
@@ -28,7 +28,7 @@ class WeatherListAdapter(
 
     override fun getItemCount() = list.size
 
-    inner class WeatherResultHolder(item: View) : RecyclerView.ViewHolder(item) {
+    inner class WeatherResultHolder(item: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(item) {
         private val weatherItemLayout = item.findViewById<LinearLayout>(R.id.weatherItemLayout)
         private val weatherItemDay = item.findViewById<TextView>(R.id.weatheItemrDay)
         private val weatherItemIcon = item.findViewById<IconTextView>(R.id.weatherItemIcon)

@@ -1,6 +1,6 @@
 package fr.ekito.myweatherapp
 
-import android.support.test.runner.AndroidJUnit4
+import androidx.test.runner.AndroidJUnit4
 import fr.ekito.myweatherapp.domain.repository.DailyForecastRepository
 import junit.framework.Assert
 import org.junit.After

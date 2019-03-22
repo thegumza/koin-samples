@@ -1,9 +1,9 @@
 package fr.ekito.myweatherapp.view.detail
 
-import android.arch.lifecycle.Observer
+import androidx.lifecycle.Observer
 import android.os.Bundle
-import android.support.design.widget.Snackbar
-import android.support.v7.app.AppCompatActivity
+import com.google.android.material.snackbar.Snackbar
+import androidx.appcompat.app.AppCompatActivity
 import fr.ekito.myweatherapp.R
 import fr.ekito.myweatherapp.domain.entity.DailyForecast
 import fr.ekito.myweatherapp.domain.entity.getColorFromCode

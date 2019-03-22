@@ -1,6 +1,6 @@
 package fr.ekito.myweatherapp
 
-import android.support.test.runner.AndroidJUnit4
+import androidx.test.runner.AndroidJUnit4
 import fr.ekito.myweatherapp.data.WeatherDataSource
 import fr.ekito.myweatherapp.data.room.WeatherDAO
 import fr.ekito.myweatherapp.data.room.WeatherDatabase
